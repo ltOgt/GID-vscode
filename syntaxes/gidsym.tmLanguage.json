@@ -1,0 +1,56 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "GID",
+	"patterns": [
+		{
+			"include": "#base"
+		},
+		{
+			"include": "#notice"
+		},
+		{
+			"include": "#reference"
+		},
+		{
+			"include": "#line"
+		}
+	],
+	"repository": {
+		"base": {
+			"patterns": [
+				{
+					"name": "base.gidsym",
+					"match": "\\s(>|\\.|\\(|\\)|<|\\^|°|\\?|\\||:|:=|^=|~|/|§|¬|!=|i|0|=|x|->|=>|<-|[0-9]+\\)|--|\\+|-|//|\\$|>>|::|\\|-|E|e|00|\\*|#|\\{|\\}|d|v|@|\\*\\*|_|\\[ \\]|\\[x\\]|\\[\\*\\]|\\[\\?\\]|\\[p\\]|\\[~\\])\\s"
+				}
+			]
+		},
+		"notice": {
+			"patterns": [
+				{
+					"name": "notice.gidsym",
+					"match": "\\s(!|S|\\[!\\])\\s"
+				}
+			]
+		},
+		"reference": {
+			"patterns": [
+				{
+					"name": "reference.gidsym",
+					"match": "(~\\[[a-zA-Z_\\s]+\\]|\\*\\[[a-zA-Z_\\s]+\\]|~\\{[a-zA-Z_\\s]+\\}|\\*\\{[a-zA-Z_\\s]+\\}|\\[a-zA-Z0-9\\]~)"
+				}
+			]
+		},
+		"line": {
+			"name": "line.gidsym",
+			"begin": "!!",
+			"end": "$",
+			"patterns": [
+				{
+					"name": "constant.character.escape.gidsym",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.gid"
+}

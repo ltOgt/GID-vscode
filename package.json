@@ -1,0 +1,25 @@
+{
+    "name": "gid-symbols",
+    "displayName": "GID Symbols",
+    "description": "TM Grammar for GID symbols",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "gidsym",
+            "aliases": ["GID", "gidsym"],
+            "extensions": [".gid"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "gidsym",
+            "scopeName": "source.gid",
+            "path": "./syntaxes/gidsym.tmLanguage.json"
+        }]
+    }
+}
