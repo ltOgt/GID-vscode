@@ -13,6 +13,12 @@
 		},
 		{
 			"include": "#line"
+		},
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#comment-block"
 		}
 	],
 	"repository": {
@@ -42,11 +48,33 @@
 		},
 		"line": {
 			"name": "line.gidsym",
-			"begin": "!!",
+			"begin": "(!!)(?=\\s)",
 			"end": "$",
 			"patterns": [
 				{
 					"name": "constant.character.escape.gidsym",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comment": {
+			"name": "comment.gidsym",
+			"begin": "(\\*\\*)(?=\\s)",
+			"end": "$",
+			"patterns": [
+				{
+					"name": "constant.character.escape.gidsym",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comment-block": {
+			"name": "comment-block.gidsym",
+			"begin": "\\*\\*<(?=$|\\s)",
+			"end": "\\*\\*>(?=$|\\s)",
+			"patterns": [
+				{
+					"name": "content.comment-block.gidsym",
 					"match": "\\\\."
 				}
 			]

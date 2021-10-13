@@ -12,34 +12,53 @@ Add the following to your `settings.json` (e.g. at `~/.config/Code/User/`):
 ```json
 {
     //...
-    "editor.tokenColorCustomizations": {
+        "editor.tokenColorCustomizations": {
         "textMateRules": [
-            {
+            {   
                 "scope": "base.gidsym",
                 "settings": {
-                    "foreground": "#00FF00"
-                }
-            },
-            {
+                    "foreground": "#5FAF00"
+                }   
+            },  
+            {   
                 "scope": "notice.gidsym",
                 "settings": {
                     "foreground": "#FF0000"
-                }
-            },
-            {
+                }   
+            },  
+            {   
                 "scope": "reference.gidsym",
                 "settings": {
                     "foreground": "#5454fc"
-                }
-            },
-            {
+                }   
+            },  
+            {   
                 "scope": "line.gidsym",
                 "settings": {
                     "foreground": "#FF0000"
-                }
-            }
-        ]
-    }
+                }   
+            },  
+            {   
+                "scope": "comment.gidsym",
+                "settings": {
+                    "foreground": "#8787AF"
+                }   
+            },  
+            {   
+                "scope": "comment-block.gidsym",
+                "settings": {
+                    "foreground": "#8787AF"
+                }   
+            },  
+            {   
+                "scope": "content.comment-block.gidsym",
+                "settings": {
+                    "foreground": "#8787AF"
+                }   
+            }   
+        ]   
+    }   
+
 }
 ```
 
