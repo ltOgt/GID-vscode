@@ -64,7 +64,7 @@ For you and my future self to better understand the regular expressions, here is
     - `(?<=^|[\\s|\\|])` makes sure that the next match group `(>|...)` is preceded (`(?<=...)`) by space (`\\s`), a pipe (`\\|`), or the beginning of the line (`^`) without those symbols being a part of the match
     - this means " S problem" and " S|? problem" will match the symbols, but "Some problem?" will not.
     - also note how `<` and `=` must not be escaped, they become special characters only in this context
-    - `^` can't be inside the `[...]` since then it would be the `NOT` symbol (see (here)[https://stackoverflow.com/a/9155707/7215915])
+    - `^` can't be inside the `[...]` since then it would be the `NOT` symbol (see [here](https://stackoverflow.com/a/9155707/7215915))
 - positive look-behind
     - `(?=$|[\\s|\\|])` same as positive look-ahead but behind the previous match group
 
