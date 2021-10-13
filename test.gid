@@ -1,0 +1,12 @@
+> leading symbol ** trailing comment
+** leading comment
+    S notice
+    !! line line
+        ( relative )
+    **<
+        block comment
+    **>
+~[reference]
+*[reference]
+# {t_a_g}
+* {t_a_g} { thought }
