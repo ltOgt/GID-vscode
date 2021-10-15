@@ -10,3 +10,6 @@
 *[reference]
 # {t_a_g}
 * {t_a_g} { thought }
+> :bold for multiple words: not bold
+> ´italic for multiple words´ not italic
+> _underline for multiple words_  not underlined

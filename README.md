@@ -55,7 +55,28 @@ Add the following to your `settings.json` (e.g. at `~/.config/Code/User/`):
                 "settings": {
                     "foreground": "#8787AF"
                 }   
-            }   
+            },
+            {
+                "scope": "bold.style.gidsym",
+                "settings": {
+                    "foreground": "#FFFFFF",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "underline.style.gidsym",
+                "settings": {
+                    "foreground": "#FFFFFF",
+                    "fontStyle": "underline"
+                }
+            },
+            {
+                "scope": "italic.style.gidsym",
+                "settings": {
+                    "foreground": "#FFFFFF",
+                    "fontStyle": "italic"
+                }
+            }
         ]   
     }   
 

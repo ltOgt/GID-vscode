@@ -19,6 +19,15 @@
 		},
 		{
 			"include": "#comment-block"
+		},
+		{
+			"include": "#bold-style"
+		},
+		{
+			"include": "#underline-style"
+		},
+		{
+			"include": "#italic-style"
 		}
 	],
 	"repository": {
@@ -75,6 +84,39 @@
 			"patterns": [
 				{
 					"name": "content.comment-block.gidsym",
+					"match": "\\\\."
+				}
+			]
+		},
+		"bold-style": {
+			"name": "bold.style.gidsym",
+			"begin": "(?<=^|[\\s])(:)(?=[^\\s|\\n|$])",
+			"end": "(?<=[^\\s|\\n])(:)(?=$|[\\s|\\n])",
+			"patterns": [
+				{
+					"name": "content.underline.style.gidsym",
+					"match": "\\\\."
+				}
+			]
+		},
+		"underline-style": {
+			"name": "underline.style.gidsym",
+			"begin": "(?<=^|[\\s])(_)(?=[^\\s|\\n|$])",
+			"end": "(?<=[^\\s|\\n])(_)(?=$|[\\s|\\n])",
+			"patterns": [
+				{
+					"name": "content.underline.style.gidsym",
+					"match": "\\\\."
+				}
+			]
+		},
+		"italic-style": {
+			"name": "italic.style.gidsym",
+			"begin": "(?<=^|[\\s])(´)(?=[^\\s|\\n|$])",
+			"end": "(?<=[^\\s|\\n])(´)(?=$|[\\s|\\n])",
+			"patterns": [
+				{
+					"name": "content.italic.style.gidsym",
 					"match": "\\\\."
 				}
 			]
