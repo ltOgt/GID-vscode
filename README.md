@@ -7,7 +7,7 @@ Since this extension is not published, you have to clone it into `~/.vscode/exte
 
 ## Custom coloring
 
-Add the following to your `settings.json` (e.g. at `~/.config/Code/User/`):
+Add the following to your `settings.json` (e.g. at `~/.config/Code/User/` for Linux or `~/Library/Application Support/Code/User/settings.json` for mac):
 
 ```json
 {
