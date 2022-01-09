@@ -37,7 +37,14 @@ Add the following to your `settings.json` (e.g. at `~/.config/Code/User/` for Li
                 "settings": {
                     "foreground": "#FF0000"
                 }   
-            },  
+            },
+            {   
+                "scope": "linepre.gidsym",
+                "settings": {
+                    "foreground": "#FF0000",
+                    "fontStyle": "underline"
+                }   
+            },
             {   
                 "scope": "comment.gidsym",
                 "settings": {

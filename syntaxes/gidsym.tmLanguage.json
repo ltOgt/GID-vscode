@@ -15,6 +15,9 @@
 			"include": "#line"
 		},
 		{
+			"include": "#line-pre"
+		},
+		{
 			"include": "#comment"
 		},
 		{
@@ -63,6 +66,14 @@
 				{
 					"name": "constant.character.escape.gidsym",
 					"match": "\\\\."
+				}
+			]
+		},
+		"line-pre": {
+			"patterns": [
+				{
+					"name": "linepre.gidsym",
+					"match": "(?<=^)([\\s]+)(?=(!!)|(\\[!\\]))"
 				}
 			]
 		},

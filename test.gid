@@ -1,11 +1,12 @@
 > leading symbol ** trailing comment
 ** leading comment
     S notice
-    !! line line
+    !! line line (should be prepended too)
         ( relative )
     **<
         block comment
     **>
+        [!] this should be easily visible
 ~[reference]
 *[reference]
 # {t_a_g}
