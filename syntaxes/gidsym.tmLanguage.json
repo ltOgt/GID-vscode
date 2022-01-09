@@ -89,35 +89,26 @@
 			]
 		},
 		"bold-style": {
-			"name": "bold.style.gidsym",
-			"begin": "(?<=^|[\\s])(:)(?=[^\\s|\\n|$])",
-			"end": "(?<=[^\\s|\\n])(:)(?=$|[\\s|\\n])",
 			"patterns": [
 				{
-					"name": "content.underline.style.gidsym",
-					"match": "\\\\."
+					"name": "bold.style.gidsym",
+					"match": "(?<=^|[\\s])(:[^\\s|\\n|$]{1}[^\\n]+[^\\s|\\n|$]{1}:)(?=$|[\\s|\\n])"
 				}
 			]
 		},
 		"underline-style": {
-			"name": "underline.style.gidsym",
-			"begin": "(?<=^|[\\s])(_)(?=[^\\s|\\n|$])",
-			"end": "(?<=[^\\s|\\n])(_)(?=$|[\\s|\\n])",
 			"patterns": [
 				{
-					"name": "content.underline.style.gidsym",
-					"match": "\\\\."
+					"name": "underline.style.gidsym",
+					"match": "(?<=^|[\\s])(_[^\\s|\\n|$]{1}[^\\n]+[^\\s|\\n|$]{1}_)(?=$|[\\s|\\n])"
 				}
 			]
 		},
 		"italic-style": {
-			"name": "italic.style.gidsym",
-			"begin": "(?<=^|[\\s])(´)(?=[^\\s|\\n|$])",
-			"end": "(?<=[^\\s|\\n])(´)(?=$|[\\s|\\n])",
 			"patterns": [
 				{
-					"name": "content.italic.style.gidsym",
-					"match": "\\\\."
+					"name": "italic.style.gidsym",
+					"match": "(?<=^|[\\s])(´[^\\s|\\n|$]{1}[^\\n]+[^\\s|\\n|$]{1}´)(?=$|[\\s|\\n])"
 				}
 			]
 		}
