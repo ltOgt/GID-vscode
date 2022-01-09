@@ -15,3 +15,6 @@
 > _underline for multiple words_  not underlined
 > _underline should not be over
     > multiple lines_
+> _a_ not ul _b_
+> :a: not bold :b:
+> ´a´ not italic ´b´
