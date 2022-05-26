@@ -14,54 +14,103 @@ Add the following to your `settings.json` (e.g. at `~/.config/Code/User/` for Li
     //...
         "editor.tokenColorCustomizations": {
         "textMateRules": [
-            {   
+            {
                 "scope": "base.gidsym",
                 "settings": {
                     "foreground": "#5FAF00"
-                }   
-            },  
-            {   
+                }
+            },
+            {
+                "scope": "todo.gidsym",
+                "settings": {
+                    "foreground": "#5FAF00"
+                }
+            },
+            {
+                "scope": "start.enclose-block.gidsym",
+                "settings": {
+                    "foreground": "#5FAF00",
+                }
+            },
+            {
+                "scope": "content.enclose-block.gidsym",
+                "settings": {
+                    "fontStyle": "italic",
+                }
+            },
+            {
+                "scope": "end.enclose-block.gidsym",
+                "settings": {
+                    "foreground": "#5FAF00",
+                }
+            },
+            {
+                "scope": "todo.gidsym",
+                "settings": {
+                    "foreground": "#5FAF00"
+                }
+            },
+            {
                 "scope": "notice.gidsym",
                 "settings": {
                     "foreground": "#FF0000"
-                }   
-            },  
-            {   
+                }
+            },
+            {
                 "scope": "reference.gidsym",
                 "settings": {
                     "foreground": "#5454fc"
-                }   
-            },  
-            {   
+                }
+            },
+            {
                 "scope": "line.gidsym",
                 "settings": {
                     "foreground": "#FF0000"
-                }   
+                }
             },
-            {   
+            {
                 "scope": "linepre.gidsym",
                 "settings": {
                     "foreground": "#FF0000",
                     "fontStyle": "underline"
-                }   
+                }
             },
-            {   
+            {
                 "scope": "comment.gidsym",
                 "settings": {
                     "foreground": "#8787AF"
-                }   
-            },  
-            {   
+                }
+            },
+            {
                 "scope": "comment-block.gidsym",
                 "settings": {
                     "foreground": "#8787AF"
-                }   
-            },  
-            {   
+                }
+            },
+            {
                 "scope": "content.comment-block.gidsym",
                 "settings": {
                     "foreground": "#8787AF"
-                }   
+                }
+            },
+            {
+                "scope": "start.verbatim-block.gidsym",
+                "settings": {
+                    "foreground": "#5FAF00",
+                }
+            },
+            {
+                "scope": "verbatim-block.gidsym",
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#8787AF"
+                }
+            },
+            {
+                "scope": "end.verbatim-block.gidsym",
+                "settings": {
+                    "foreground": "#5FAF00",
+                }
             },
             {
                 "scope": "bold.style.gidsym",
@@ -86,7 +135,6 @@ Add the following to your `settings.json` (e.g. at `~/.config/Code/User/` for Li
             }
         ]   
     }   
-
 }
 ```
 

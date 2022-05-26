@@ -5,12 +5,15 @@
         ( relative )
     **<
         block comment
+        *[test]
     **>
         [!] this should be easily visible
 ~[reference]
 *[reference]
 # {t_a_g}
 * {t_a_g} { thought }
+[ ] todo
+[x] todo done
 > :bold for multiple words: not bold
 > ´italic for multiple words´ not italic
 > _underline for multiple words_  not underlined
@@ -19,3 +22,10 @@
 > _a_ not ul _b_
 > :a: not bold :b:
 > ´a´ not italic ´b´
+> verbatim block {{
+    > this should :not: be highlighted  
+    main() {
+        test
+    }
+  }}
+> normal again

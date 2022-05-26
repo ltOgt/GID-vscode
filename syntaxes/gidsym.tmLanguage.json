@@ -6,6 +6,12 @@
 			"include": "#base"
 		},
 		{
+			"include": "#todo"
+		},
+		{
+			"include": "#enclose-block"
+		},
+		{
 			"include": "#notice"
 		},
 		{
@@ -24,6 +30,9 @@
 			"include": "#comment-block"
 		},
 		{
+			"include": "#verbatim-block"
+		},
+		{
 			"include": "#bold-style"
 		},
 		{
@@ -38,7 +47,36 @@
 			"patterns": [
 				{
 					"name": "base.gidsym",
-					"match": "(?<=^|[\\s|\\|])(>|\\.|\\(|\\)|<|\\^|°|\\?|:|:=|\\^=|~|/|§|¬|!=|i|0|=|x|->|=>|<-|[0-9]+\\)|--|\\+|-|//|\\$|>>|::|\\|-|E|e|00|\\*|#|\\{|\\}|d|v|@|_|\\[ \\]|\\[x\\]|\\[\\*\\]|\\[\\?\\]|\\[p\\]|\\[~\\])(?=$|[\\s|\\|])"
+					"match": "(?<=^|[\\s|\\|])(>|\\.|<|\\^|°|\\?|:|:=|\\^=|~|/|§|¬|!=|i|0|=|x|->|=>|<-|[0-9]+\\)|--|\\+|-|//|\\$|>>|::|\\|-|E|e|00|\\*|#|d|v|@|_)(?=[\\s|\\|])"
+				}
+			]
+		},
+		"todo": {
+			"patterns": [
+				{
+					"name": "todo.gidsym",
+					"match": "(?<=^|[\\s|\\|])(\\[ \\]|\\[x\\]|\\[\\*\\]|\\[\\?\\]|\\[p\\]|\\[~\\])(?=[\\s|\\|])"
+				}
+			]
+		},
+		"enclose-block": {
+			"name": "enclose-block.gidsym",
+			"begin": "(?<=^|\\t| )(\\(|\\{)(?=\\t| )",
+			"beginCaptures": {
+				"1": {
+					"name": "start.enclose-block.gidsym"
+				}
+			},
+			"end": "(?<=\\t| )(\\)|\\})(?=$|\\t| )",
+			"endCaptures": {
+				"1": {
+					"name": "end.enclose-block.gidsym"
+				}
+			},
+			"patterns": [
+				{
+					"name": "content.enclose-block.gidsym",
+					"match": "[^\\(\\)\\{\\}\\n]+"
 				}
 			]
 		},
@@ -95,6 +133,27 @@
 			"patterns": [
 				{
 					"name": "content.comment-block.gidsym",
+					"match": "\\\\."
+				}
+			]
+		},
+		"verbatim-block": {
+			"name": "verbatim-block.gidsym",
+			"begin": "(?<=^|\\t| )(\\{\\{)(?=\\n)",
+			"beginCaptures": {
+				"1": {
+					"name": "start.verbatim-block.gidsym"
+				}
+			},
+			"end": "(?<=\\t| )(\\}\\})(?=$)",
+			"endCaptures": {
+				"1": {
+					"name": "end.verbatim-block.gidsym"
+				}
+			},
+			"patterns": [
+				{
+					"name": "catchall.verbatim-block.gidsym",
 					"match": "\\\\."
 				}
 			]
